@@ -72,12 +72,9 @@ const Contact = () => {
             <div className="flex items-center justify-center gap-2 mb-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-green-400 text-sm font-medium">
-                Available for new opportunities
+                Open to advisory roles, board opportunities, and collaborative AI projects.
               </span>
             </div>
-            <p className="text-slate-500 text-sm">
-              Open to product leadership roles and advisory positions
-            </p>
           </motion.div>
         </motion.div>
 
