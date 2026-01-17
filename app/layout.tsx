@@ -69,9 +69,9 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'ADD_YOUR_GOOGLE_VERIFICATION_CODE',
+    google: 'unob7Blr-tJYmkbM7E9XsXBeHeerCIU_knI9bTbqEB0',
     other: {
-      'msvalidate.01': 'ADD_YOUR_BING_VERIFICATION_CODE',
+      'msvalidate.01': 'A69CBCDA93B7D69FDF24F6622C2140F5',
     },
   },
 };
