@@ -34,7 +34,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen flex items-center py-20 px-4 relative overflow-hidden bg-slate-900">
+    <section id="about" className="min-h-screen flex items-center py-20 px-4 relative bg-slate-900">
       <div className="max-w-6xl mx-auto relative z-10 w-full" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -80,13 +80,13 @@ const About = () => {
             <h3 className="text-sm font-semibold text-electric-purple uppercase tracking-wider">Why I'm Different</h3>
           </div>
           <div className="space-y-4 text-slate-300 leading-relaxed">
-            <p className="text-lg">
+            <p className="text-base sm:text-lg break-words">
               I started as a software engineer at Bell Labs, evolved into a product engineer, and eventually became a PM - but <span className="text-white font-semibold">I never stopped building</span>. While many PMs write specs, I prototype, validate, and ship. I've filed 5+ patents, built systems serving 100M+ interactions, and founded 4 startups where I was both product visionary and technical co-founder.
             </p>
-            <p className="text-lg">
+            <p className="text-base sm:text-lg break-words">
               In the AI era, this technical foundation matters more than ever. I don't just specify AI features - I build with Claude Code, validate with rapid prototypes, and understand systems deeply enough to make the right product tradeoffs.
             </p>
-            <p className="text-lg">
+            <p className="text-base sm:text-lg break-words">
               <span className="text-electric-cyan font-semibold">Product sense + technical chops = the Builder PM advantage.</span>
             </p>
           </div>
@@ -142,7 +142,7 @@ const About = () => {
               </p>
             </div>
 
-            <p className="text-slate-400 text-sm italic pt-4">
+            <p className="text-slate-400 text-sm italic pt-4 break-words">
               5+ patents filed in communication, AI, and social graph analysis
             </p>
           </motion.div>

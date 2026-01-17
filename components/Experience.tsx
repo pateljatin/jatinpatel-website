@@ -116,7 +116,7 @@ const Experience = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="experience" className="min-h-screen py-20 px-4 relative overflow-hidden bg-slate-900">
+    <section id="experience" className="min-h-screen py-20 px-4 relative bg-slate-900">
       <div className="max-w-6xl mx-auto relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -133,8 +133,8 @@ const Experience = () => {
 
         {/* Timeline */}
         <div className="relative">
-          {/* Thinner vertical line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-electric-purple via-electric-blue to-electric-cyan opacity-30"></div>
+          {/* Thinner vertical line - hidden on mobile for cleaner layout */}
+          <div className="absolute hidden md:block left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-electric-purple via-electric-blue to-electric-cyan opacity-30"></div>
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -147,28 +147,28 @@ const Experience = () => {
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                 } flex-col md:gap-8`}
               >
-                {/* Smaller timeline dot */}
+                {/* Smaller timeline dot - hidden on mobile */}
                 <motion.div
                   whileHover={{ scale: 1.3 }}
-                  className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 rounded-full bg-gradient-to-r from-electric-purple to-electric-blue z-10 shadow-lg shadow-electric-purple/50"
+                  className="absolute hidden md:block left-1/2 transform -translate-x-1/2 w-3 h-3 rounded-full bg-gradient-to-r from-electric-purple to-electric-blue z-10 shadow-lg shadow-electric-purple/50"
                 ></motion.div>
 
                 {/* Content card */}
                 <motion.div
                   whileHover={{ scale: 1.01, y: -5 }}
-                  className={`w-full md:w-5/12 ml-16 md:ml-0 ${
+                  className={`w-full md:w-5/12 ${
                     index % 2 === 0 ? 'md:text-right' : 'md:text-left'
                   }`}
                 >
-                  <div className="glass-card p-6 rounded-xl group transition-all duration-300">
+                  <div className="glass-card p-4 sm:p-6 rounded-xl group transition-all duration-300">
                     {/* Header */}
                     <div className="flex items-start gap-3 mb-3 flex-col">
-                      <div className="flex items-center gap-2 w-full">
-                        <div className={`p-2.5 bg-gradient-to-r ${exp.color} rounded-lg flex-shrink-0`}>
+                      <div className="flex items-start gap-2 w-full">
+                        <div className={`p-2 sm:p-2.5 bg-gradient-to-r ${exp.color} rounded-lg flex-shrink-0`}>
                           <Briefcase className="w-4 h-4 text-white" />
                         </div>
-                        <div className="flex-1">
-                          <h3 className="text-xl md:text-2xl font-semibold text-white">
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white break-words">
                             {exp.title}
                           </h3>
                           <p className="text-electric-cyan font-medium text-sm">{exp.company}</p>
@@ -176,21 +176,21 @@ const Experience = () => {
                       </div>
 
                       {/* Metadata badges */}
-                      <div className="flex flex-wrap gap-2 text-xs">
-                        <div className="flex items-center gap-1.5 px-3 py-1 bg-white/5 rounded-full text-slate-400 border border-white/10">
-                          <Calendar className="w-3 h-3" />
-                          <span>{exp.period}</span>
+                      <div className="flex flex-wrap gap-2 text-xs w-full">
+                        <div className="flex items-center gap-1.5 px-2 sm:px-3 py-1 bg-white/5 rounded-full text-slate-400 border border-white/10">
+                          <Calendar className="w-3 h-3 flex-shrink-0" />
+                          <span className="whitespace-nowrap">{exp.period}</span>
                         </div>
-                        <div className="px-3 py-1 bg-white/5 rounded-full text-slate-400 border border-white/10">
+                        <div className="px-2 sm:px-3 py-1 bg-white/5 rounded-full text-slate-400 border border-white/10 break-words">
                           {exp.scope}
                         </div>
                       </div>
                     </div>
 
                     {/* Team size indicator */}
-                    <div className="flex items-center gap-2 mb-4 text-slate-400 text-sm">
-                      <Users className="w-4 h-4" />
-                      <span>{exp.team}</span>
+                    <div className="flex items-start gap-2 mb-4 text-slate-400 text-sm">
+                      <Users className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                      <span className="break-words">{exp.team}</span>
                     </div>
 
                     {/* Description */}

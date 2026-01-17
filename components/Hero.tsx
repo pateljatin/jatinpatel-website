@@ -4,10 +4,6 @@ import { motion } from 'framer-motion';
 import { ChevronDown, MapPin } from 'lucide-react';
 
 const Hero = () => {
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Deep slate background */}
@@ -76,42 +72,23 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Single CTA Button */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.8 }}
-            className="pt-8"
-          >
-            <motion.button
-              onClick={() => scrollToSection('experience')}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full text-white font-medium shadow-lg hover:bg-white/15 hover:border-white/20 hover:shadow-xl hover:shadow-electric-purple/20 transition-all duration-300"
-            >
-              View Experience
-            </motion.button>
-          </motion.div>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.button
-          onClick={() => scrollToSection('about')}
+        {/* Subtle scroll indicator */}
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          whileHover={{ scale: 1.1 }}
+          transition={{ delay: 1.2, duration: 1 }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center text-slate-400 hover:text-electric-cyan transition-colors"
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="text-slate-500"
           >
-            <span className="text-sm mb-2 font-light">Scroll Down</span>
-            <ChevronDown className="w-5 h-5" />
+            <ChevronDown className="w-6 h-6" />
           </motion.div>
-        </motion.button>
+        </motion.div>
       </div>
     </section>
   );
