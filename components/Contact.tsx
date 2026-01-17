@@ -3,22 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Mail, Linkedin, Send } from 'lucide-react';
-
-const socialLinks = [
-  {
-    name: "LinkedIn",
-    icon: <Linkedin className="w-5 h-5" />,
-    url: "https://linkedin.com/in/jatin1patel",
-    hoverColor: "group-hover:text-blue-400"
-  },
-  {
-    name: "Email",
-    icon: <Mail className="w-5 h-5" />,
-    url: "mailto:jatin@jatinpatel.ai",
-    hoverColor: "group-hover:text-electric-cyan"
-  }
-];
+import { Linkedin } from 'lucide-react';
 
 const Contact = () => {
   const ref = useRef(null);
@@ -49,55 +34,32 @@ const Contact = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="glass-card p-12 rounded-2xl"
         >
-          {/* Email CTA */}
-          <motion.div
-            className="mb-12 text-center"
-          >
-            <motion.a
-              href="mailto:jatin@jatinpatel.ai"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full text-white font-medium shadow-lg hover:bg-white/15 hover:border-white/20 hover:shadow-xl hover:shadow-electric-purple/20 transition-all duration-300 group"
-            >
-              <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              Send me an email
-            </motion.a>
-          </motion.div>
-
-          {/* Social Links */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-medium text-center text-slate-400 mb-8">
-              Or connect with me on
+          {/* LinkedIn CTA */}
+          <div className="text-center">
+            <h3 className="text-lg font-medium text-slate-400 mb-8">
+              Connect with me on LinkedIn
             </h3>
 
-            <div className="flex justify-center gap-4">
-              {socialLinks.map((social, index) => (
-                <motion.a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                  whileHover={{ y: -3, scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="group relative"
-                >
-                  <div className="glass-card p-4 rounded-xl flex flex-col items-center gap-2 hover:bg-white/10 transition-all min-w-[80px]">
-                    {/* Icon */}
-                    <div className={`text-slate-400 transition-colors ${social.hoverColor}`}>
-                      {social.icon}
-                    </div>
-
-                    {/* Label */}
-                    <span className={`text-slate-400 text-xs font-medium transition-colors ${social.hoverColor}`}>
-                      {social.name}
-                    </span>
-                  </div>
-                </motion.a>
-              ))}
-            </div>
+            <motion.a
+              href="https://linkedin.com/in/jatin1patel"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{ y: -3, scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="group inline-block"
+            >
+              <div className="glass-card p-6 rounded-xl flex flex-col items-center gap-3 hover:bg-white/10 transition-all min-w-[120px]">
+                <div className="text-slate-400 transition-colors group-hover:text-blue-400">
+                  <Linkedin className="w-8 h-8" />
+                </div>
+                <span className="text-slate-400 text-sm font-medium transition-colors group-hover:text-blue-400">
+                  LinkedIn
+                </span>
+              </div>
+            </motion.a>
           </div>
 
           {/* Availability Status */}
