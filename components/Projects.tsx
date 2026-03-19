@@ -3,39 +3,41 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
+import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: "Microsoft Teams Consumer Platform",
-    description: "Led consumer strategy and product development, scaling to 60M+ monthly active users with 3B+ monthly minutes. Drove Windows 11 integration, AI roadmap, and monetization strategy with 9M+ paid conversions.",
-    tech: ["Platform Scale", "AI Integration", "Windows 11", "Monetization"],
-    image: "💬",
+    title: "Civic Brief",
+    subtitle: "Open Source Civic AI Platform",
+    description: "Conceived and launched solo using Claude Code and Claude API. Converts government budgets, zoning amendments, legislation, and meeting minutes into plain-language summaries in the languages communities actually speak.",
+    tech: ["Next.js", "TypeScript", "Supabase", "Claude API", "Vercel"],
+    image: "🏛️",
     color: "from-electric-purple to-electric-blue",
-    impact: "60M+ MAU • 3B+ Monthly Minutes • 9M+ Paid Users"
+    impact: "213 US counties with zero local news • 4B+ citizens in non-dominant languages",
+    liveUrl: "https://civic-brief.vercel.app",
+    githubUrl: "https://github.com/pateljatin/civic-brief"
   },
   {
-    title: "Conversational AI Pioneer",
-    description: "Built enterprise conversational AI platform at Pypestream 8+ years before ChatGPT. Deployed to Fortune 500 companies handling 100M+ monthly interactions with natural language understanding.",
-    tech: ["Conversational AI", "NLP", "Enterprise SaaS", "Automation"],
+    title: "PeopleBuilt.ai",
+    subtitle: "AI App Discovery Platform",
+    description: "Curated directory of apps built with AI tools like Claude, Cursor, ChatGPT, and v0, where creators can discover, submit, and claim ownership of their apps. Built from concept to production in weekend sprint sessions.",
+    tech: ["Next.js", "TypeScript", "Supabase", "Vercel", "OpenAI API"],
     image: "🤖",
     color: "from-electric-blue to-electric-cyan",
-    impact: "Fortune 500 • 100M+ Monthly Interactions • 8+ Years Early"
+    impact: "500+ apps seeded • 116+ creators • 7 AI tools tracked",
+    liveUrl: "https://peoplebuilt.ai",
+    githubUrl: null
   },
   {
-    title: "First iPhone Enterprise UC Client",
-    description: "Pioneered mobile unified communications at Bell Labs, launching the first iPhone enterprise client in 2009. Deployed to 40+ Fortune 500 companies with 100K+ users and 90% adoption rate.",
-    tech: ["Mobile UC", "iPhone SDK", "Enterprise", "Real-time Comms"],
-    image: "📱",
+    title: "Multiple AI-Native Products",
+    subtitle: "Stealth, Active Development",
+    description: "Building multiple AI-native consumer products in stealth using Claude Code, GitHub Copilot, and modern full-stack development.",
+    tech: ["Claude Code", "GitHub Copilot", "Full-Stack"],
+    image: "🔬",
     color: "from-electric-cyan to-electric-purple",
-    impact: "40+ Fortune 500 • 100K+ Users • 90% Adoption"
-  },
-  {
-    title: "Social Commerce Innovation",
-    description: "Founded 48Bricks, pioneering social graph-based commerce. Patented Social Tree technology connecting influencers with brands, scaling to 100K+ users with innovative discovery algorithms.",
-    tech: ["Social Graph", "Commerce Platform", "Influencer Tech", "Patents"],
-    image: "🌳",
-    color: "from-electric-purple to-electric-cyan",
-    impact: "100K+ Users • Patented Technology • Social Commerce Pioneer"
+    impact: "Active development, 2025-Present",
+    liveUrl: null,
+    githubUrl: null
   }
 ];
 
@@ -59,7 +61,7 @@ const Projects = () => {
           <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-electric-purple to-electric-cyan">
             Featured Work
           </h2>
-          <p className="text-slate-400 text-lg mb-6">Pioneering platforms that shaped the future of communication</p>
+          <p className="text-slate-400 text-lg mb-6">Building AI-native products from concept to production</p>
           <div className="w-24 h-1 bg-gradient-to-r from-electric-purple to-electric-cyan mx-auto rounded-full"></div>
         </motion.div>
 
@@ -102,9 +104,10 @@ const Projects = () => {
 
                 {/* Content Section */}
                 <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-electric-cyan transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-electric-cyan transition-colors">
                     {project.title}
                   </h3>
+                  <p className="text-electric-cyan text-sm font-medium mb-3">{project.subtitle}</p>
                   <p className="text-gray-400 mb-4 flex-1 leading-relaxed">
                     {project.description}
                   </p>
@@ -115,8 +118,8 @@ const Projects = () => {
                     <p className="text-sm text-white font-medium">{project.impact}</p>
                   </div>
 
-                  {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2">
+                  {/* Tech Stack + Links */}
+                  <div className="flex flex-wrap gap-2 items-center">
                     {project.tech.map((tech, i) => (
                       <motion.span
                         key={i}
@@ -128,6 +131,28 @@ const Projects = () => {
                         {tech}
                       </motion.span>
                     ))}
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-auto flex items-center gap-1 px-3 py-1 text-xs font-semibold text-electric-cyan border border-electric-cyan/30 rounded-full hover:bg-electric-cyan/10 transition-colors"
+                      >
+                        <ExternalLink className="w-3 h-3" />
+                        Live
+                      </a>
+                    )}
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 px-3 py-1 text-xs font-semibold text-slate-400 border border-white/10 rounded-full hover:bg-white/10 transition-colors"
+                      >
+                        <Github className="w-3 h-3" />
+                        GitHub
+                      </a>
+                    )}
                   </div>
                 </div>
 
