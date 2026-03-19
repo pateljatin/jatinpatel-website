@@ -100,15 +100,21 @@ const Skills = () => {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="mt-8 text-center"
         >
-          <div className="inline-flex items-center gap-4 px-6 py-3 glass-card rounded-full">
-            <span className="text-slate-400 text-sm">Patents Filed:</span>
-            <span className="text-white font-semibold text-lg">5+</span>
-            <span className="text-slate-600">|</span>
-            <span className="text-slate-400 text-sm">Startups Founded:</span>
-            <span className="text-white font-semibold text-lg">4</span>
-            <span className="text-slate-600">|</span>
-            <span className="text-slate-400 text-sm">Years Experience:</span>
-            <span className="text-white font-semibold text-lg">20+</span>
+          <div className="inline-flex flex-wrap justify-center gap-x-6 gap-y-3 px-6 py-3 glass-card rounded-2xl">
+            <div className="flex items-center gap-2">
+              <span className="text-slate-400 text-sm">Patents Filed:</span>
+              <span className="text-white font-semibold text-lg">5+</span>
+            </div>
+            <div className="hidden sm:block text-slate-600">|</div>
+            <div className="flex items-center gap-2">
+              <span className="text-slate-400 text-sm">Startups Founded:</span>
+              <span className="text-white font-semibold text-lg">4</span>
+            </div>
+            <div className="hidden sm:block text-slate-600">|</div>
+            <div className="flex items-center gap-2">
+              <span className="text-slate-400 text-sm">Years Experience:</span>
+              <span className="text-white font-semibold text-lg">20+</span>
+            </div>
           </div>
         </motion.div>
       </div>
