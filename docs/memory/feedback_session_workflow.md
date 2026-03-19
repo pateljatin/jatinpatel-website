@@ -10,5 +10,5 @@ User prefers structured session management:
 - Clear context at end of each session
 - Check memory at start of each session to pick up where we left off
 
-**Why:** Jatin works across multiple sessions and wants continuity without context bloat.
-**How to apply:** At session start, read MEMORY.md and relevant memory files. At session end, update memory with decisions made and work completed. Keep docs/ folder current with project-level documentation.
+**Why:** Jatin works across multiple sessions and wants continuity without context bloat. Repo is private so memory files are safe to commit.
+**How to apply:** At session start, read MEMORY.md and relevant memory files (also check docs/memory/ in repo if local memory is missing). At session end, update both Claude's local memory files AND docs/memory/ in the repo, then commit and push so memory is versioned and portable.
