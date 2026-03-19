@@ -106,7 +106,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative flex justify-center md:justify-end"
           >
-            <div className="relative" style={{ width: '256px', height: '256px' }}>
+            <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64">
               {/* Subtle gradient glow */}
               <div className="absolute inset-0 bg-gradient-to-r from-electric-purple via-electric-blue to-electric-cyan rounded-full blur-xl opacity-30"></div>
 

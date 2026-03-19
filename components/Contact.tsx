@@ -32,7 +32,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="glass-card p-12 rounded-2xl"
+          className="glass-card p-6 sm:p-12 rounded-2xl"
         >
           {/* LinkedIn CTA */}
           <div className="text-center">
