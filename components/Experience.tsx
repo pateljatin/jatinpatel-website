@@ -17,7 +17,8 @@ const experiences = [
       "Scaled platform to 60M+ MAU with 3B+ monthly minutes",
       "Led Windows 11 integration and AI strategy roadmap",
       "Drove 9M+ paid user conversions and monetization strategy",
-      "Filed 4 patents in communication and AI integration"
+      "Filed 4 patents in communication and AI integration",
+      "Driving launch of Copilot Chat in Teams consumer product"
     ],
     color: "from-electric-purple to-electric-blue"
   },
