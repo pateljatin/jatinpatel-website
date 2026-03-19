@@ -5,7 +5,7 @@ import { ChevronDown, MapPin } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Deep slate background */}
       <div className="absolute inset-0 bg-slate-900"></div>
 
