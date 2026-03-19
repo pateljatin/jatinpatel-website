@@ -25,7 +25,10 @@ const achievements = [
   "Conversational AI Pioneer (2015, pre-ChatGPT)",
   "60M+ MAU Platform Scale at Microsoft",
   "4 Startups Founded in Commerce & AI",
-  "20+ Years Platform Leadership"
+  "20+ Years Platform Leadership",
+  "Civic Brief — Open Source Civic AI Platform (2025)",
+  "PeopleBuilt.ai — AI App Discovery Platform (2025)",
+  "Copilot Chat Launch, Microsoft Teams (2025)"
 ];
 
 const Education = () => {

@@ -24,7 +24,8 @@ const skillCategories = [
   {
     category: "Domain Expertise",
     skills: [
-      "Conversational AI", "Communication Platforms", "Mobile Commerce",
+      "Generative AI", "LLM Product Design", "Conversational AI",
+      "Communication Platforms", "Mobile Commerce",
       "Real-time Systems", "Social Graph Analysis", "Multi-modal Experiences",
       "Windows Integration", "Enterprise Architecture"
     ]
