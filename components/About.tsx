@@ -63,6 +63,12 @@ const About = () => {
             <p className="text-lg">
               Driving multi-modal experiences, monetization, and responsible AI features
             </p>
+            <p className="text-lg">
+              Driving launch of Copilot Chat in Teams consumer product
+            </p>
+            <p className="text-lg">
+              Built AI PM toolbox using Claude Code and GitHub Copilot
+            </p>
           </div>
         </motion.div>
 
