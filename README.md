@@ -46,7 +46,7 @@ yarn dev
 
 ## 🛠️ Built With
 
-- **[Next.js 14](https://nextjs.org/)** - React framework with App Router
+- **[Next.js 16](https://nextjs.org/)** - React framework with App Router
 - **[TypeScript](https://www.typescriptlang.org/)** - Type-safe development
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
 - **[Framer Motion](https://www.framer.com/motion/)** - Animation library
@@ -126,9 +126,9 @@ Contributions, issues, and feature requests are welcome!
 
 **Jatin Patel**
 
-- Portfolio: [Your Website]
-- GitHub: [@yourusername]
-- LinkedIn: [Your LinkedIn]
+- Portfolio: [jatinpatel.ai](https://jatinpatel.ai)
+- GitHub: [@pateljatin](https://github.com/pateljatin)
+- LinkedIn: [jatin1patel](https://linkedin.com/in/jatin1patel)
 
 ---
 
