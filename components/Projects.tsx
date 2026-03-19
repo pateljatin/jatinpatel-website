@@ -5,7 +5,19 @@ import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
-const projects = [
+interface Project {
+  title: string;
+  subtitle: string;
+  description: string;
+  tech: string[];
+  image: string;
+  color: string;
+  impact: string;
+  liveUrl: string | null;
+  githubUrl: string | null;
+}
+
+const projects: Project[] = [
   {
     title: "Civic Brief",
     subtitle: "Open Source Civic AI Platform",
@@ -69,7 +81,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
-              key={index}
+              key={project.title}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -136,6 +148,7 @@ const Projects = () => {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`View ${project.title} live`}
                         className="ml-auto flex items-center gap-1 px-3 py-1 text-xs font-semibold text-electric-cyan border border-electric-cyan/30 rounded-full hover:bg-electric-cyan/10 transition-colors"
                       >
                         <ExternalLink className="w-3 h-3" />
@@ -147,6 +160,7 @@ const Projects = () => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`View ${project.title} on GitHub`}
                         className="flex items-center gap-1 px-3 py-1 text-xs font-semibold text-slate-400 border border-white/10 rounded-full hover:bg-white/10 transition-colors"
                       >
                         <Github className="w-3 h-3" />
