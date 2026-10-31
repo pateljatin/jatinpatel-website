@@ -11,7 +11,7 @@ const experiences = [
     company: "Microsoft",
     period: "Nov 2017 - Present",
     scope: "Cross-functional • Strategic • Consumer Platform",
-    team: "Leading 120+ person team across Design, Engineering, and Data",
+    team: "Leading 70+ person team across Design, Engineering, and Data",
     description: "Scaled the Microsoft Teams consumer platform to tens of millions of monthly active users, with the Windows 11 integration. Driving AI strategy, multi-modal experiences, and responsible AI features.",
     achievements: [
       "Scaled platform to tens of millions of monthly active users, with billions of minutes a month",
