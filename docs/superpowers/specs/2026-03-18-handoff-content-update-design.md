@@ -61,7 +61,7 @@ Before each edit, read the current file and produce a current-vs-new diff for re
 **Current "Currently" section** lists Teams strategy and AI focus.
 
 **Add two lines**:
-- "Driving launch of Copilot Chat in Teams consumer product"
+- "Launched Copilot Chat in Teams consumer, with high retention"
 - "Built AI PM toolbox using Claude Code and GitHub Copilot"
 
 No other changes. Three Chapter Arc and "Why I'm Different" remain intact.
@@ -71,7 +71,7 @@ No other changes. Three Chapter Arc and "Why I'm Different" remain intact.
 **Current Microsoft role** lists 4 achievements.
 
 **Add**:
-- "Driving launch of Copilot Chat in Teams consumer product"
+- "Launched Copilot Chat in Teams consumer, with high retention"
 
 Do NOT reveal FY27 strategy specifics. Keep all other roles as-is.
 

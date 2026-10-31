@@ -64,7 +64,7 @@ const About = () => {
               Driving multi-modal experiences, monetization, and responsible AI features
             </p>
             <p className="text-lg">
-              Driving launch of Copilot Chat in Teams consumer product
+              Launched Copilot Chat in Teams consumer, with high retention
             </p>
             <p className="text-lg">
               Built AI PM toolbox using Claude Code and GitHub Copilot

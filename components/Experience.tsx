@@ -18,7 +18,7 @@ const experiences = [
       "Led Windows 11 integration and AI strategy roadmap",
       "Drove millions of paid conversions and set the monetization strategy",
       "Filed 4 patents in communication and AI integration",
-      "Driving launch of Copilot Chat in Teams consumer product"
+      "Launched Copilot Chat in Teams consumer, with high retention"
     ],
     color: "from-electric-purple to-electric-blue"
   },

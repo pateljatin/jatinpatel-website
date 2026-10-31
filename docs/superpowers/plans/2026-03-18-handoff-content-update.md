@@ -265,7 +265,7 @@
       Driving multi-modal experiences, monetization, and responsible AI features
     </p>
     <p className="text-lg">
-      Driving launch of Copilot Chat in Teams consumer product
+      Launched Copilot Chat in Teams consumer, with high retention
     </p>
     <p className="text-lg">
       Built AI PM toolbox using Claude Code and GitHub Copilot
@@ -316,7 +316,7 @@ achievements: [
     "Led Windows 11 integration and AI strategy roadmap",
     "Drove millions of paid conversions and set the monetization strategy",
     "Filed 4 patents in communication and AI integration",
-    "Driving launch of Copilot Chat in Teams consumer product"
+    "Launched Copilot Chat in Teams consumer, with high retention"
   ],
   ```
 
