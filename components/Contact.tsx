@@ -23,7 +23,7 @@ const Contact = () => {
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-electric-purple to-electric-cyan mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto font-light">
-            Let's discuss how we can work together to build impactful products
+            Let&apos;s discuss how we can work together to build impactful products
           </p>
         </motion.div>
 
