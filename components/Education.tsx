@@ -141,7 +141,7 @@ const Education = () => {
             className="mt-8 pt-8 border-t border-white/5"
           >
             <p className="text-slate-400 italic text-center">
-              "Building 20 years ahead - from pioneering mobile UC at Bell Labs (2001) to anticipating conversational AI (2015) to scaling AI-native collaboration at Microsoft."
+              &quot;Building 20 years ahead - from pioneering mobile UC at Bell Labs (2001) to anticipating conversational AI (2015) to scaling AI-native collaboration at Microsoft.&quot;
             </p>
           </motion.div>
         </motion.div>

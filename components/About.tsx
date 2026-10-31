@@ -83,14 +83,14 @@ const About = () => {
             <div className="p-2 bg-gradient-to-br from-electric-purple to-electric-blue rounded-lg">
               <Code className="w-5 h-5 text-white" />
             </div>
-            <h3 className="text-sm font-semibold text-electric-purple uppercase tracking-wider">Why I'm Different</h3>
+            <h3 className="text-sm font-semibold text-electric-purple uppercase tracking-wider">Why I&apos;m Different</h3>
           </div>
           <div className="space-y-4 text-slate-300 leading-relaxed">
             <p className="text-base sm:text-lg break-words">
-              I started as a software engineer at Bell Labs, evolved into a product engineer, and eventually became a PM - but <span className="text-white font-semibold">I never stopped building</span>. While many PMs write specs, I prototype, validate, and ship. I've filed 5+ patents, built systems serving 100M+ interactions, and founded 4 startups where I was both product visionary and technical co-founder.
+              I started as a software engineer at Bell Labs, evolved into a product engineer, and eventually became a PM - but <span className="text-white font-semibold">I never stopped building</span>. While many PMs write specs, I prototype, validate, and ship. I&apos;ve filed 5+ patents, built systems serving 100M+ interactions, and founded 4 startups where I was both product visionary and technical co-founder.
             </p>
             <p className="text-base sm:text-lg break-words">
-              In the AI era, this technical foundation matters more than ever. I don't just specify AI features - I build with Claude Code, validate with rapid prototypes, and understand systems deeply enough to make the right product tradeoffs.
+              In the AI era, this technical foundation matters more than ever. I don&apos;t just specify AI features - I build with Claude Code, validate with rapid prototypes, and understand systems deeply enough to make the right product tradeoffs.
             </p>
             <p className="text-base sm:text-lg break-words">
               <span className="text-electric-cyan font-semibold">Product sense + technical chops = the Builder PM advantage.</span>
