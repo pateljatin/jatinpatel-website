@@ -144,7 +144,7 @@ const About = () => {
                 <span className="text-electric-blue font-semibold">Serial Entrepreneur</span> (2011-2017): Founded 4 startups in commerce and AI
               </p>
               <p className="text-slate-300">
-                <span className="text-electric-cyan font-semibold">Microsoft Product Leader</span> (2017-Present): Leading Teams to <span className="text-white font-semibold">60M+ MAU</span> with <span className="text-white font-semibold">3B+ monthly minutes</span>
+                <span className="text-electric-cyan font-semibold">Microsoft Product Leader</span> (2017-Present): Leading Teams to <span className="text-white font-semibold">tens of millions of monthly active users</span>, with <span className="text-white font-semibold">billions of minutes a month</span>
               </p>
             </div>
 

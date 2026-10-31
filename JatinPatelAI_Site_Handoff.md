@@ -61,9 +61,9 @@ Sections (in order): Hero, About, Experience, Featured Work, Skills & Expertise,
 ### EXPERIENCE
 
 **Microsoft — Group Product Manager** (Nov 2017 - Present)
-- Scaled platform to 60M+ MAU with 3B+ monthly minutes
+- Scaled platform to tens of millions of monthly active users, with billions of minutes a month
 - Led Windows 11 integration and AI strategy roadmap
-- Drove 9M+ paid user conversions and monetization strategy
+- Drove millions of paid conversions and set the monetization strategy
 - Filed 4 patents in communication and AI integration
 - Add: Driving launch of Copilot Chat in Teams consumer product
 - Note: Do NOT reveal FY27 strategy specifics
@@ -163,9 +163,9 @@ Keep as-is: links to LinkedIn, open to advisory roles, board opportunities, and 
 
 | Metric | Current Value |
 |---|---|
-| Teams MAU | 60M+ |
-| Monthly minutes | 3B+ |
-| Paid conversions | 9M+ |
+| Teams MAU | Tens of millions |
+| Monthly minutes | Billions a month |
+| Paid conversions | Millions |
 | Pypestream interactions | 100M+/month |
 | 48Bricks users | 100K+ |
 | Patents | 5+ |
