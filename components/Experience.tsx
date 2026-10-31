@@ -38,21 +38,6 @@ const experiences = [
     color: "from-electric-blue to-electric-cyan"
   },
   {
-    title: "CTO & Co-Founder",
-    company: "48Bricks",
-    period: "Feb 2013 - Mar 2016",
-    scope: "Founding Team • Social Commerce",
-    team: "Built and led engineering team from 0 to 1",
-    description: "Founded social commerce platform connecting influencers with brands. Pioneered social graph-based product discovery.",
-    achievements: [
-      "Scaled to 100K+ users across social commerce platform",
-      "Patented Social Tree technology for influencer marketing",
-      "Pioneered social graph analysis for product recommendations",
-      "Built platform from concept to scale"
-    ],
-    color: "from-electric-cyan to-electric-purple"
-  },
-  {
     title: "CTO",
     company: "SlamAd",
     period: "May 2015 - Oct 2015",
@@ -67,9 +52,24 @@ const experiences = [
     color: "from-electric-purple to-electric-blue"
   },
   {
+    title: "CTO & Co-Founder",
+    company: "48Bricks",
+    period: "Feb 2013 - May 2015",
+    scope: "Founding Team • Social Commerce",
+    team: "Built and led engineering team from 0 to 1",
+    description: "Founded social commerce platform connecting influencers with brands. Pioneered social graph-based product discovery.",
+    achievements: [
+      "Scaled to 100K+ users across social commerce platform",
+      "Patented Social Tree technology for influencer marketing",
+      "Pioneered social graph analysis for product recommendations",
+      "Built platform from concept to scale"
+    ],
+    color: "from-electric-cyan to-electric-purple"
+  },
+  {
     title: "Head of Product",
     company: "Speadi",
-    period: "May 2012 - Feb 2013",
+    period: "Apr 2012 - Feb 2013",
     scope: "Product Leadership • Mobile Commerce",
     team: "Led product strategy for location-based commerce",
     description: "Created real-time competitive deals platform with GPS-based gamified commerce experience.",
