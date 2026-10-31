@@ -23,7 +23,7 @@ const achievements = [
   "5+ Patents in Communication & AI",
   "First iPhone Enterprise UC Client (2009)",
   "Conversational AI Pioneer (2015, pre-ChatGPT)",
-  "60M+ MAU Platform Scale at Microsoft",
+  "Tens of millions of MAU, platform scale at Microsoft",
   "4 Startups Founded in Commerce & AI",
   "20+ Years Platform Leadership",
   "Civic Brief — Open Source Civic AI Platform (2025)",

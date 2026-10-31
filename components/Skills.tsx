@@ -33,7 +33,7 @@ const skillCategories = [
   {
     category: "Strategic Impact & Scale",
     skills: [
-      "0-to-1 Products", "Scale (60M+ MAU)", "Monetization",
+      "0-to-1 Products", "Scale (tens of millions of MAU)", "Monetization",
       "User Growth", "120+ Team Leadership", "Innovation",
       "Responsible AI", "Platform Thinking"
     ]

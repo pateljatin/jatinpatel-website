@@ -297,9 +297,9 @@
 **Current state (lines 16-21) — Microsoft achievements array:**
 ```tsx
 achievements: [
-  "Scaled platform to 60M+ MAU with 3B+ monthly minutes",
+  "Scaled platform to tens of millions of monthly active users, with billions of minutes a month",
   "Led Windows 11 integration and AI strategy roadmap",
-  "Drove 9M+ paid user conversions and monetization strategy",
+  "Drove millions of paid conversions and set the monetization strategy",
   "Filed 4 patents in communication and AI integration"
 ],
 ```
@@ -312,9 +312,9 @@ achievements: [
 
   ```tsx
   achievements: [
-    "Scaled platform to 60M+ MAU with 3B+ monthly minutes",
+    "Scaled platform to tens of millions of monthly active users, with billions of minutes a month",
     "Led Windows 11 integration and AI strategy roadmap",
-    "Drove 9M+ paid user conversions and monetization strategy",
+    "Drove millions of paid conversions and set the monetization strategy",
     "Filed 4 patents in communication and AI integration",
     "Driving launch of Copilot Chat in Teams consumer product"
   ],
@@ -392,7 +392,7 @@ const achievements = [
   "5+ Patents in Communication & AI",
   "First iPhone Enterprise UC Client (2009)",
   "Conversational AI Pioneer (2015, pre-ChatGPT)",
-  "60M+ MAU Platform Scale at Microsoft",
+  "Tens of millions of MAU, platform scale at Microsoft",
   "4 Startups Founded in Commerce & AI",
   "20+ Years Platform Leadership"
 ];
@@ -409,7 +409,7 @@ const achievements = [
     "5+ Patents in Communication & AI",
     "First iPhone Enterprise UC Client (2009)",
     "Conversational AI Pioneer (2015, pre-ChatGPT)",
-    "60M+ MAU Platform Scale at Microsoft",
+    "Tens of millions of MAU, platform scale at Microsoft",
     "4 Startups Founded in Commerce & AI",
     "20+ Years Platform Leadership",
     "Civic Brief — Open Source Civic AI Platform (2025)",

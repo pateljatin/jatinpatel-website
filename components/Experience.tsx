@@ -11,12 +11,12 @@ const experiences = [
     company: "Microsoft",
     period: "Nov 2017 - Present",
     scope: "Cross-functional • Strategic • Consumer Platform",
-    team: "Leading 120+ person team across Design, Engineering, and Data",
-    description: "Scaled Microsoft Teams consumer platform to 60M+ MAU with Windows 11 integration. Driving AI strategy, multi-modal experiences, and responsible AI features.",
+    team: "Leading 70+ person team across Design, Engineering, and Data",
+    description: "Scaled the Microsoft Teams consumer platform to tens of millions of monthly active users, with the Windows 11 integration. Driving AI strategy, multi-modal experiences, and responsible AI features.",
     achievements: [
-      "Scaled platform to 60M+ MAU with 3B+ monthly minutes",
+      "Scaled platform to tens of millions of monthly active users, with billions of minutes a month",
       "Led Windows 11 integration and AI strategy roadmap",
-      "Drove 9M+ paid user conversions and monetization strategy",
+      "Drove millions of paid conversions and set the monetization strategy",
       "Filed 4 patents in communication and AI integration",
       "Driving launch of Copilot Chat in Teams consumer product"
     ],
@@ -217,6 +217,9 @@ const Experience = () => {
                           <p className="text-sm text-slate-400 leading-relaxed">{achievement}</p>
                         </motion.div>
                       ))}
+                      {exp.company === "Microsoft" && (
+                        <p className="text-xs text-slate-600 pt-1">Figures rounded for confidentiality.</p>
+                      )}
                     </div>
                   </div>
                 </motion.div>
